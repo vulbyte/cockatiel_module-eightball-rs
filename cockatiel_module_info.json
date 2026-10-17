@@ -1,0 +1,64 @@
+{
+  "authority": 0,
+  "autostart": true,
+  "binary": {
+    "linux": {
+      "aarch64": "target/release/cockatiel_eightball",
+      "arm": "target/release/cockatiel_eightball",
+      "x86_64": "target/release/cockatiel_eightball"
+    },
+    "macos": {
+      "aarch64": "target/release/cockatiel_eightball",
+      "arm": "target/release/cockatiel_eightball",
+      "x86_64": "target/release/cockatiel_eightball"
+    },
+    "windows": {
+      "aarch64": "target/release/cockatiel_eightball.exe",
+      "arm": "target/release/cockatiel_eightball.exe",
+      "x86_64": "target/release/cockatiel_eightball.exe"
+    }
+  },
+  "build_command": "cargo",
+  "build_flags": [
+    "build",
+    "--release"
+  ],
+  "capabilities": "preprocess",
+  "command_flags": [
+    "run",
+    "--release"
+  ],
+  "credentials": [
+    {
+      "key": "command_flag",
+      "label": "Command Flag",
+      "list": false,
+      "sensitive": false
+    },
+    {
+      "key": "reconnect_base_secs",
+      "label": "Reconnect base (s)",
+      "list": false,
+      "sensitive": false
+    },
+    {
+      "key": "reconnect_max_secs",
+      "label": "Reconnect max (s)",
+      "list": false,
+      "sensitive": false
+    }
+  ],
+  "description": "the magic 8-ball — !8ball <question> replies with a classic random answer",
+  "launch_command": "cargo",
+  "min_rank": 0,
+  "name": "eightball",
+  "price": 0,
+  "release": {
+    "base_url": "https://github.com/vulbyte/cockatiel_module-eightball-rs/releases/download",
+    "repo": "vulbyte/cockatiel_module-eightball-rs",
+    "tag": "v0.1.0"
+  },
+  "root_file": "./src/main.rs",
+  "terminal": false,
+  "version": "0.1.0"
+}
